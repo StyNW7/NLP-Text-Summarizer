@@ -7,7 +7,7 @@ from transformers import (
 from datasets import load_from_disk
 
 
-# 🧠 Tentukan max_input_length berdasarkan model
+# Get Max Length Input for each model
 def get_max_input_length(model_checkpoint):
     if "pegasus" in model_checkpoint:
         return 512
@@ -17,7 +17,7 @@ def get_max_input_length(model_checkpoint):
         return 1024
 
 
-# ✨ Tokenization function with dynamic input length
+# Tokenization function with dynamic input length
 def tokenize_function(example, tokenizer, max_input_length=1024):
     model_inputs = tokenizer(
         example["document"],
@@ -25,7 +25,7 @@ def tokenize_function(example, tokenizer, max_input_length=1024):
         padding="max_length",
         truncation=True
     )
-    # 🟡 Perubahan sesuai warning Transformers v5 (tidak pakai as_target_tokenizer lagi)
+    
     labels = tokenizer(
         text_target=example["outcome"],
         max_length=150,

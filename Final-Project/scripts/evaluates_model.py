@@ -69,17 +69,17 @@ def main():
     df.to_csv("../results/model_comparison.csv", index=False)
 
     # Visualize
-    print("\n📊 Hasil Perbandingan Model:")
+    print("\n📊 Results of Model Comparison:")
     print(df)
 
     df.set_index("Model").plot(kind="bar", figsize=(10, 6))
-    plt.title("Perbandingan Model Summarization (ROUGE Scores)")
+    plt.title("Model Summarization Comparison (ROUGE Scores)")
     plt.ylabel("Score")
     plt.ylim(0.0, 1.0)
     plt.tight_layout()
     plt.savefig("../results/model_comparison.png")
     plt.close()
-    print("✅ Grafik disimpan di: results/model_comparison.png")
+    print("✅ Graph save at: results/model_comparison.png")
 
 if __name__ == "__main__":
     main()
