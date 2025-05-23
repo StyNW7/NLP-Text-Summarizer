@@ -1,8 +1,10 @@
 venv/
-results/
 saved_model/
 saved_model2/
 saved_preprocessing_model/
 aclsum-results/
 models/
 data/
+
+/results/
+!/Final-Project/results/
