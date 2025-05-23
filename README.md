@@ -75,6 +75,15 @@ Run the "aclsum-modelling.ipynb"
 
 ```
 
+### 📌 NLP ACLSum Text Summarizer - Final Project
+
+```sh
+
+Please check the ./Final-Project/README.md file
+cd Final-Project
+
+```
+
 #### Hopefully, this documentation and guide are helpful for learning and running the NLP project!
 
 <!-- Owner -->
