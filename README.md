@@ -1,6 +1,13 @@
-# NLP ACLSum Text Summarizer Project
+# NLP ACLSum Text Summarizer
 
 ## Simple Guide to run the Project
+
+### 📌 Clone the repository
+To clone the repo, please run this command:
+
+```sh
+git clone https://github.com/StyNW7/NLP-Text-Summarizer.git
+```
 
 ### 📌 Creating Virtual Environment
 To create virtual environment, please run this command:
@@ -49,6 +56,10 @@ Run this command to deactivate the Virtual Environment:
 deactivate
 ```
 
+> [!TIP]
+> 
+> Setup the virtual environment and dependencies installation in the root folder
+
 ### 📌 Run the Project
 
 ```sh
@@ -59,9 +70,12 @@ Run the "aclsum-text-summarization.ipynb"
 Project Step 2 (Data Preprocessing and Vectorizing)
 Run the "aclsum-preprocessing.ipynb"
 
+Project Step 3 (Data Modelling, Training, and Evaluating)
+Run the "aclsum-modelling.ipynb"
+
 ```
 
-#### Hopefully, this documentation and guide are helpful for learning and running the game project!
+#### Hopefully, this documentation and guide are helpful for learning and running the NLP project!
 
 <!-- Owner -->
 
